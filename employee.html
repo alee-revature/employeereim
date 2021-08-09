@@ -1,0 +1,106 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+<h1>Employee</h1>
+<br />
+<a href="#">View Past Tickets (Pending, Approved, Rejected)</a>
+<a href="#">Add a Reimbursement Request</a>
+
+<br />
+<br />
+<h2>Add Reimbursement Request</h2>
+<form action="">
+    Type of Reimbursement
+    <input type="radio" name="lodging" id="">
+    <label for="lodging">Lodging</label>
+    <input type="radio" name="food" id="">
+    <label for="food">Food</label>
+    <input type="radio" name="travel" id="">
+    <label for="travel">Travel</label>
+    <input type="radio" name="other" id="">
+    <label for="other">Other</label>
+    <br />
+    <label for="amount">Amount to be Reimbursed: </label>
+    <input type="number" name="amount" id="" placeholder="$" required>
+    <br />
+    <label for="description">Description</label><br />
+    <textarea name="description" id="" cols="30" rows="10"></textarea>
+    <br />
+
+    <label for="receipt">Receipt document or image</label>
+    <input type="file" name="receipt" id="">
+    <!--<input type="image" src="" alt="">-->
+    <br />
+
+    <label for="timestamp">Timestamp (to be hidden)</label>
+    <input type="datetime" name="timestamp" id="" placeholder="mm/dd/yy">
+   <br />
+    <input type="submit" value="submit">
+</form>
+
+<h2>View Past Tickets (Pending, Approved, Rejected)</h2>
+<form action="">
+    
+    Filter requests by ticket status
+
+    <input type="checkbox" name="approved" id="">
+    <label for="approved">Approved</label>
+    <input type="checkbox" name="rejected" id="">
+    <label for="rejected">Rejected</label>
+    <input type="checkbox" name="pending">
+    <label for="pending">Pending</label>
+    <input type="submit" value="Search">
+</form>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Type of Reimbursement</th>
+                <th>Amount to be Reimbursed</th>
+                <th>Description</th>
+                <th>Receipt Document or Image</th>
+                <th>Timestamp</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Food</td>
+                <td>$</td>
+                <td>n/a</td>
+                <td>file</td>
+                <td>mm/dd/yy</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Travel</td>
+                <td>$</td>
+                <td>n/a</td>
+                <td>file</td>
+                <td>mm/dd/yy</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Lodging</td>
+                <td>$</td>
+                <td>n/a</td>
+                <td>file</td>
+                <td>mm/dd/yy</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>$</td>
+                <td>n/a</td>
+                <td>file</td>
+                <td>mm/dd/yy</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+
+    </table>
+    </body>
