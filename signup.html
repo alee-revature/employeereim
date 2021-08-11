@@ -1,0 +1,47 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://bootswatch.com/5/lumen/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <span class="fs-4">Company</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="view_past_tickets.html" class="nav-link">View Past Tickets</a></li>
+      <li class="nav-item"><a href="create_ticket.html" class="nav-link">Add a Reimbursement Request</a></li>
+      <li class="nav-item"><a href="financemanager.html" class="nav-link">Finance Manager</a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link">Logout</a></li>
+    </ul>
+  </header>
+</div>
+
+<div class="container">
+
+<div class="row">
+<div class="col-sm-6">
+<h1>Sign Up</h1>
+<form action="">
+    <div class="form-group">
+        <label for="username">Username</label>
+    <input type="text" name="username" class="form-control" id="" [value]="username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label><br />
+    <input type="password" name="password" class="form-control" id="" [value]="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+    <input type="email" name="email" class="form-control" [value]="email" placeholder="Email">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<a href="login.html">Already have an account? Sign in</a>
+</div>
+</div>
+</div>
