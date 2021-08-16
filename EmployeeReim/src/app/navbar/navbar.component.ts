@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   headerStyle = "d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom";
+  Company = "Angela's Company";
   link1 = "index.html";
   link2 = "view_past_tickets.html";
   link3 = "create_ticket.html";
