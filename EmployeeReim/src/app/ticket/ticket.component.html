@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card">
+    
+    <h5 class="card-header">{{ticketName}}</h5>
+    <div class="card-body">
+      <div>
+        <p class="card-title">Employee Name: {{employeeName}}</p>
+        <p>Reimbursement Type: {{reimbursementType}}</p>
+        <p>Amount Requested: ${{amount}}</p>
+        <p>Description: {{description}}</p>
+    
+        <p>Timestamp: {{timestamp}}</p>
+        <p>Status: {{status}}</p>
+      </div>
+      <div>
+        <p>Image: <img src="{{file}}" alt="{{file}}"></p>
+      </div>
+      
+
+    <button class="btn btn-primary">Approve</button>
+    <button class="btn btn-secondary">Deny</button>
+    </div>
+    <div class="alert alert-success" role="alert">
+      Ticket successfully created!
+    </div>
+  </div>
+</div>
+  

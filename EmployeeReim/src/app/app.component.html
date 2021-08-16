@@ -1,8 +1,14 @@
 <app-navbar></app-navbar>
+<!--<nav>
+    <a routerLink = "/home"></a>
+    <a routerLink = "/view_past_tickets"></a>
+</nav>
+<router-outlet></router-outlet>-->
 <div class="container">
-    Welcome to the {{title}}!
-    <br />
+    <h1>Welcome to the {{title}}!</h1>
+    <p class="lead fw-normal">Glad you're here.</p>
     <button class="btn btn-primary">Sign Up</button>
-    <button class="btn btn-primary">Login</button>
+    <button class="btn btn-secondary">Login</button>
 </div>
+<app-ticket></app-ticket>
 <app-footer></app-footer>
